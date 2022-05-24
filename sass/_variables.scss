@@ -1,0 +1,32 @@
+$primary: linear-gradient(to top, #f27509 45%, #fdd819 80%);
+$secondary: linear-gradient(to right, #110b90 0%, #0066e2 100%);
+
+$clrOrange: #f27509;
+$clrBox: #fbfbfb;
+
+$fontPrimary: 'Montserrat', sans-serif;
+$fontSecondary: 'Myriad Pro', Myriad, sans-serif;
+
+$fsMobile: 12px;
+$fsSmall: 15px;
+$fsBody: 24px;
+
+// FS HEADING
+$fs-heading-large: 102px;
+
+// BREAKPOINT
+$xs: 575.98px;
+$sm: 767.98px;
+$md: 991.98px;
+$lg: 1199.98px;
+$xl: 1399.98px;
+$xxl: 1598px;
+$xxxl: 1918px;
+
+// z-index
+$z-index-0: -1;
+$z-index-0-1: -2;
+$z-index-1: 99;
+$z-index-2: 98;
+$z-index-3: 97;
+$z-index-4: 96;

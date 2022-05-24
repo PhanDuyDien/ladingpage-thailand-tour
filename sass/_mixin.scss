@@ -1,0 +1,13 @@
+@mixin text-gradient-primary() {
+  background: #f27509;
+  background: $primary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-secondary() {
+  background: #110b90;
+  background: $secondary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

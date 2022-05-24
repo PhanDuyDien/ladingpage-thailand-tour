@@ -1,0 +1,76 @@
+.contact {
+  margin-bottom: 20px;
+  &-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &-info {
+  }
+
+  &-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    margin: 10px 0;
+  }
+
+  &-local {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+
+  &-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 25px;
+  }
+
+  &-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+  &-website {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+  &-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+
+  &-hotline {
+    text-align: right;
+    h3 {
+      @include text-gradient-primary;
+      font-size: 52px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+    h2 {
+      @include text-gradient-secondary;
+      font-size: 40px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
