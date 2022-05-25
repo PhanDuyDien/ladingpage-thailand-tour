@@ -167,7 +167,9 @@ ul {
     font-size: 14px;
     padding: 10px 30px;
     text-align: right;
-    background: #f4f1f1;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #f27509), color-stop(110%, #fdd819));
+    background: linear-gradient(to bottom, #f27509 22%, #fdd819 110%);
+    color: white;
   }
   .header-top-line {
     border: 1px solid #f27509;
@@ -700,9 +702,6 @@ ul {
   .hero-content .header-menu .menu-line {
     display: none;
   }
-  .hero-content .header-menu .menu-list {
-    display: none;
-  }
   .hero-content .banner-title .heading-blue-gradient {
     width: 103%;
     font-size: 140px;
@@ -729,6 +728,12 @@ ul {
     line-height: 0;
     font-size: 17px;
     letter-spacing: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    min-height: 85vh;
   }
 }
 

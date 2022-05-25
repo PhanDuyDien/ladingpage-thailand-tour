@@ -8,7 +8,8 @@
     font-size: 14px;
     padding: 10px 30px;
     text-align: right;
-    background: #f4f1f1;
+    background: linear-gradient(to bottom, #f27509 22%, #fdd819 110%);
+    color: white;
 
     &-line {
       border: 1px solid #f27509;
@@ -557,9 +558,9 @@
         display: none;
       }
 
-      .menu-list {
-        display: none;
-      }
+      // .menu-list {
+      //   display: none;
+      // }
     }
 
     .banner-title {
@@ -595,5 +596,11 @@
         letter-spacing: 0;
       }
     }
+  }
+}
+
+@media (max-width: $s) {
+  .hero {
+    min-height: 85vh;
   }
 }
