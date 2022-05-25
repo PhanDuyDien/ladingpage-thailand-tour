@@ -1197,7 +1197,7 @@ ul {
     font-size: 14px;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
-    font-size: 18px;
+    font-size: 13px;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title img {
     width: 15px;
@@ -2600,25 +2600,7 @@ ul {
     font-size: 12px;
   }
   .subscribe .takecare {
-    top: 542px;
-  }
-  .subscribe .takecare .floating-btn .action-btn {
-    width: 40px;
-    height: 40px;
-  }
-  .subscribe .takecare .btn-contact:hover .btn {
-    padding: 5px 15px;
-  }
-  .subscribe .takecare .btn-contact .btn {
-    width: 40px;
-    height: 40px;
-    padding: 11px 11px;
-  }
-  .subscribe .takecare .btn-contact p {
-    font-size: 14px;
-  }
-  .subscribe .takecare .btn-contact span {
-    font-size: 12px;
+    display: none;
   }
   .subscribe .form-btn .col-3 {
     width: 30%;
@@ -2626,12 +2608,6 @@ ul {
   .subscribe .form-btn .btn {
     font-size: 14px;
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .subscribe .takecare {
-    top: 400px;
   }
 }
 

@@ -624,35 +624,36 @@
     }
 
     .takecare {
-      top: 542px;
+      display: none;
+      // top: 542px;
 
-      .floating-btn {
-        .action-btn {
-          width: 40px;
-          height: 40px;
-        }
-      }
+      // .floating-btn {
+      //   .action-btn {
+      //     width: 40px;
+      //     height: 40px;
+      //   }
+      // }
 
-      .btn-contact {
-        &:hover {
-          .btn {
-            padding: 5px 15px;
-          }
-        }
+      // .btn-contact {
+      //   &:hover {
+      //     .btn {
+      //       padding: 5px 15px;
+      //     }
+      //   }
 
-        .btn {
-          width: 40px;
-          height: 40px;
-          padding: 11px 11px;
-        }
+      //   .btn {
+      //     width: 40px;
+      //     height: 40px;
+      //     padding: 11px 11px;
+      //   }
 
-        p {
-          font-size: 14px;
-        }
-        span {
-          font-size: 12px;
-        }
-      }
+      //   p {
+      //     font-size: 14px;
+      //   }
+      //   span {
+      //     font-size: 12px;
+      //   }
+      // }
     }
 
     .form-btn {
@@ -667,10 +668,10 @@
   }
 }
 
-@media (max-width: $s) {
-  .subscribe {
-    .takecare {
-      top: 400px;
-    }
-  }
-}
+// @media (max-width: $s) {
+//   .subscribe {
+//     .takecare {
+//       top: 400px;
+//     }
+//   }
+// }
