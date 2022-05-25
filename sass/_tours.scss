@@ -60,13 +60,13 @@
           align-items: center;
           justify-content: space-between;
           .box-title {
+            @include text-gradient-secondary;
             display: flex;
             align-items: center;
             column-gap: 10px;
             font-size: 35px;
             font-weight: 900;
             font-style: italic;
-            @include text-gradient-secondary;
             text-transform: uppercase;
           }
 

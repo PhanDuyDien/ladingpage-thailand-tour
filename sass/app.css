@@ -999,6 +999,11 @@ ul {
 }
 
 .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
+  background: #110b90;
+  background: -webkit-gradient(linear, left top, right top, from(#110b90), to(#0066e2));
+  background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,11 +1015,6 @@ ul {
   font-size: 35px;
   font-weight: 900;
   font-style: italic;
-  background: #110b90;
-  background: -webkit-gradient(linear, left top, right top, from(#110b90), to(#0066e2));
-  background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
 
