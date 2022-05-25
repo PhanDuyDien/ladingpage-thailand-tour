@@ -1186,6 +1186,12 @@ ul {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
+    background: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: #110b90;
+  }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-check {
     width: 188px;
   }
