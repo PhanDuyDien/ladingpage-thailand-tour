@@ -391,8 +391,13 @@
 
 @media (max-width: $lg) {
   .subscribe {
+    min-height: fit-content;
     &::after {
       display: none;
+    }
+
+    &-background {
+      left: 0px;
     }
     &-heading {
       h3 {
@@ -479,7 +484,7 @@
 
 @media (max-width: $md) {
   .subscribe {
-    min-height: 100vh;
+    // min-height: 100vh;
     &-background {
       left: 0px;
       top: 41px;
@@ -528,9 +533,9 @@
 
 @media (max-width: $xs) {
   .subscribe {
-    min-height: 70vh;
+    // min-height: 85vh;
     overflow: hidden;
-
+    padding-bottom: 20px;
     &-heading {
       h3 {
         margin: 0;

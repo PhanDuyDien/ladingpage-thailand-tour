@@ -13,3 +13,16 @@ var swiperService = new Swiper('.service-slider', {
     clickable: true,
   },
 })
+
+var swiperFeedback = new Swiper('.slider-container', {
+  spaceBetween: 30,
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: '.slider-toggle',
+    clickable: true,
+  },
+})

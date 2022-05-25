@@ -59,6 +59,7 @@
 
   &-hotline {
     text-align: right;
+
     h3 {
       @include text-gradient-primary;
       font-size: 52px;
@@ -71,6 +72,130 @@
       font-size: 40px;
       font-weight: 900;
       font-style: italic;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: $xxl) {
+  .contact {
+    &-hotline {
+      h3 {
+        font-size: 42px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+    &-info {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .contact {
+    margin-top: 80px;
+    &-hotline {
+      h3 {
+        font-size: 38px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    &-info {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .contact {
+    &-hotline {
+      h3 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 12px;
+      }
+    }
+
+    &-info {
+      .logo {
+        width: 170px;
+        height: 60px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &-social {
+      column-gap: 10px;
+    }
+  }
+}
+@media (max-width: $xs) {
+  .contact {
+    margin-top: 20px;
+
+    &-content {
+      flex-direction: column;
+    }
+    &-hotline {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      h3 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    &-info {
+      width: 100%;
+      .logo {
+        width: 170px;
+        height: 60px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &-address {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 12px;
+      margin: 12px 0;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &-social {
+      row-gap: 12px;
+      flex-direction: column;
+      align-items: flex-start;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      column-gap: 10px;
     }
   }
 }

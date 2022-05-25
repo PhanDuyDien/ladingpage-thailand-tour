@@ -1,9 +1,21 @@
 .service {
-  background: url('../image/service-image-background.png') no-repeat;
   width: 100%;
   min-height: 110vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow-x: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../image/service-image-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: $z-index-0-1;
+  }
 
   .fragment {
     width: 40%;
@@ -69,11 +81,7 @@
             font-family: $fontSecondary;
             display: flex;
             align-items: flex-start;
-
-            .icon-logo {
-              margin-right: 10px;
-              margin-top: 6px;
-            }
+            column-gap: 10px;
           }
         }
         .service-slider {
@@ -91,8 +99,6 @@
             box-sizing: content-box;
             left: -40px;
             .slider-item {
-              width: 1000px;
-
               img {
                 height: 500px;
                 width: 100%;
@@ -106,8 +112,14 @@
           display: flex;
           align-items: flex-end;
           position: absolute;
-          bottom: -26px;
-          right: 335px;
+          bottom: 0;
+          left: 539px;
+          width: 100%;
+          z-index: 999;
+
+          .swiper-pagination-bullet-active {
+            background: $clrOrange;
+          }
           p {
             font-size: 60px;
             font-weight: 300;
@@ -133,27 +145,219 @@
           position: absolute;
           bottom: 100px;
           right: -50px;
+          z-index: 999;
         }
       }
     }
   }
 }
 
-// @media (max-width: $xxxl) {
-//   .service {
-//     .fragment {
-//       width: 30%;
-//     }
-//   }
-// }
+@media (max-width: $xxxl) {
+  .service {
+    &-content {
+      .service-main {
+        width: 850px;
+        height: 881px;
+      }
+    }
+  }
+}
 
-// @media (max-width: $xxl) {
-//   .service-main {
-//     .service-content {
-//       width: 700px;
-//       height: 700px;
-//       right: -100px;
-//       bottom: -90px;
-//     }
-//   }
-// }
+@media (max-width: $xxl) {
+  .service {
+    min-height: 120vh;
+    .service-main {
+      .service-content {
+        width: 700px;
+        height: 700px;
+        right: -100px;
+        bottom: -90px;
+
+        .service-detail {
+          .slider-toggle {
+            left: 482px;
+          }
+
+          .service-btn {
+            right: -30px;
+          }
+
+          .service-list {
+            top: 142px;
+            font-size: 16px;
+          }
+
+          .service-title {
+            top: 5px;
+            right: 113px;
+            h3 {
+              font-size: 70px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+
+          .service-slider {
+            right: -65px;
+            .slider-list {
+              width: 800px;
+              height: 323px;
+              left: 100px;
+
+              .slider-item {
+                img {
+                  height: 340px;
+                  width: 642px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .service {
+    padding: 80px 0;
+    min-height: fit-content;
+    &::after {
+      left: 70px;
+      width: 100%;
+      background-size: contain;
+    }
+
+    .fragment {
+      display: none;
+    }
+
+    &-main {
+      justify-content: center;
+      width: 100%;
+
+      .service-content {
+        align-items: flex-start;
+        position: relative;
+        border-radius: 30px;
+        bottom: 0 !important;
+        right: 0 !important;
+        &::after {
+          content: '';
+          background: url('../image/Shape\ 1.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: $z-index-1;
+        }
+
+        .shape {
+          display: none;
+        }
+
+        .service-detail {
+          width: 100%;
+          height: 100%;
+          .service-title {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px 30px;
+            position: relative;
+            z-index: 101;
+          }
+          .service-list {
+            z-index: 101;
+            top: 0 !important ;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px 30px;
+            position: relative;
+          }
+
+          .service-slider {
+            top: -90px;
+            right: 0 !important;
+            position: relative;
+            z-index: 100;
+
+            .slider-list {
+              width: 100% !important;
+              height: 100% !important;
+              position: unset;
+            }
+          }
+
+          .service-button {
+            .service-btn {
+              right: -111px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .service {
+    &-main {
+      .service-content {
+        .service-detail {
+          .slider-toggle {
+            left: 555px !important;
+          }
+
+          .service-button {
+            .service-btn {
+              right: 33%;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .service {
+    &-main {
+      .service-content {
+        width: 85% !important;
+
+        .service-detail {
+          .service-title {
+            text-align: center;
+
+            h3 {
+              font-size: 26px !important;
+            }
+            p {
+              font-size: 14px !important;
+            }
+          }
+
+          .service-list {
+            font-size: 14px !important;
+            padding: 10px 20px !important;
+          }
+
+          .service-button {
+            .service-btn {
+              font-size: 12px;
+              right: 24%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

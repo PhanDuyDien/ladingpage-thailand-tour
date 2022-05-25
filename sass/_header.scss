@@ -345,7 +345,7 @@
 
 @media (max-width: $lg) {
   .hero {
-    min-height: 72vh;
+    min-height: fit-content;
   }
 
   .header {
@@ -449,7 +449,7 @@
 
 @media (max-width: $md) {
   .hero {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     .header {
       height: fit-content;
     }
@@ -506,7 +506,7 @@
 
 @media (max-width: $xs) {
   .hero {
-    min-height: 80vh;
+    min-height: 75vh;
   }
 
   .hero-background {

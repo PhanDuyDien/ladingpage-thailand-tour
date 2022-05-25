@@ -163,6 +163,12 @@
 @media (max-width: $sm) {
   .question {
     &-flex {
+      &::after {
+        left: -285px;
+        top: -401px;
+        width: 200%;
+        height: 200%;
+      }
       width: 100%;
     }
 
@@ -172,13 +178,13 @@
 
       .info-content {
         h3.heading {
-          font-size: 46px;
+          font-size: 36px;
         }
 
         .info-list {
           .info-item {
             label {
-              font-size: 18px;
+              font-size: 14px;
             }
 
             p {
