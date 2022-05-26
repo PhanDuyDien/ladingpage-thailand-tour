@@ -9,7 +9,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: -70px;
+    top: 10px;
     width: 100%;
     height: 100%;
     background: url(../image/intro-background.png);
@@ -84,6 +84,14 @@
     align-items: flex-end;
     flex-direction: column;
     z-index: $z-index-0;
+  }
+}
+
+@media (max-width: $xxxl) {
+  .question {
+    &-image {
+      left: 0;
+    }
   }
 }
 

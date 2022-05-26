@@ -1,6 +1,6 @@
 .service {
   width: 100%;
-  min-height: 110vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -154,10 +154,12 @@
 
 @media (max-width: $xxxl) {
   .service {
-    &-content {
-      .service-main {
-        width: 850px;
-        height: 881px;
+    &-main {
+      width: 850px;
+      height: 881px;
+
+      .service-content {
+        right: -20px;
       }
     }
   }
@@ -214,6 +216,16 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  .service {
+    &-main {
+      .service-content {
+        right: 20px !important;
       }
     }
   }
@@ -329,6 +341,12 @@
 
 @media (max-width: $xs) {
   .service {
+    padding: 0;
+
+    &::after {
+      left: 10px;
+    }
+
     &-main {
       .service-content {
         width: 85% !important;
@@ -353,7 +371,10 @@
           .service-button {
             .service-btn {
               font-size: 12px;
-              right: 24%;
+              left: 50%;
+              transform: translateX(-50%);
+              padding: 10px 25px;
+              right: unset;
             }
           }
         }

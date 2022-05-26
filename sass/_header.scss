@@ -170,7 +170,8 @@
             bottom: 0;
             left: 50%;
             margin-left: -3px;
-            height: calc(100vh - 330px);
+            height: 0;
+            transition: all 0.5s;
           }
 
           .menu-list {
@@ -197,6 +198,33 @@
               text-transform: uppercase;
               // padding-right: 210px;
               cursor: pointer;
+              opacity: 0;
+              transform: scale(0);
+
+              &:nth-child(8) {
+                transition: all 0.2s ease;
+              }
+              &:nth-child(7) {
+                transition: all 0.2s ease 0.05s;
+              }
+              &:nth-child(6) {
+                transition: all 0.2s ease 0.1s;
+              }
+              &:nth-child(5) {
+                transition: all 0.2s ease 0.15s;
+              }
+              &:nth-child(4) {
+                transition: all 0.2s ease 0.2s;
+              }
+              &:nth-child(3) {
+                transition: all 0.2s ease 0.25s;
+              }
+              &:nth-child(2) {
+                transition: all 0.2s ease 0.3s;
+              }
+              &:nth-child(1) {
+                transition: all 0.2s ease 0.35s;
+              }
 
               &:nth-child(2) {
                 margin-top: 40px;
@@ -221,11 +249,50 @@
                 height: 12px;
                 border-radius: 100%;
                 position: absolute;
-                right: -5px;
+                right: -45px;
               }
             }
           }
         }
+
+        .nav-input:checked ~ .menu-box {
+          &::after {
+            height: calc(100vh - 330px);
+          }
+
+          .menu-item {
+            opacity: 1;
+            transform: scale(1);
+
+            &:nth-child(1) {
+              transition: all 0.2s ease 0.05s;
+            }
+            &:nth-child(2) {
+              transition: all 0.2s ease 0.1s;
+            }
+            &:nth-child(3) {
+              transition: all 0.2s ease 0.15s;
+            }
+            &:nth-child(4) {
+              transition: all 0.2s ease 0.2s;
+            }
+            &:nth-child(5) {
+              transition: all 0.2s ease 0.25s;
+            }
+            &:nth-child(6) {
+              transition: all 0.2s ease 0.3s;
+            }
+            &:nth-child(7) {
+              transition: all 0.2s ease 0.35s;
+            }
+            &:nth-child(8) {
+              transition: all 0.2s ease 0.4s;
+            }
+          }
+        }
+
+        // .nav-input:checked ~ .menu-list .menu-item {
+        // }
       }
     }
 
@@ -318,6 +385,12 @@
       .menu-box {
         .menu-list {
           padding-right: 10px;
+
+          .menu-item {
+            .menu-circle {
+              right: -15px;
+            }
+          }
         }
       }
     }

@@ -332,6 +332,13 @@
   }
 }
 
+@media (max-width: $xxxl) {
+  .subscribe {
+    min-height: 135vh;
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: $xxl) {
   .subscribe {
     &::after {
@@ -392,6 +399,7 @@
 @media (max-width: $lg) {
   .subscribe {
     min-height: fit-content;
+    padding: 20px 0;
     &::after {
       display: none;
     }
@@ -484,7 +492,6 @@
 
 @media (max-width: $md) {
   .subscribe {
-    // min-height: 100vh;
     &-background {
       left: 0px;
       top: 41px;
