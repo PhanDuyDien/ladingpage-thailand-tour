@@ -55,11 +55,16 @@
         //   position: absolute;
         // }
 
+        input[type='checkbox']:checked ~ .box-detail {
+          display: block;
+        }
+
         .box-heading {
           display: flex;
           align-items: center;
           justify-content: space-between;
           .box-title {
+            cursor: pointer;
             @include text-gradient-secondary;
             display: flex;
             align-items: center;
@@ -92,12 +97,14 @@
         }
 
         .box-detail {
+          display: none;
           font-size: 20px;
           font-family: $fontSecondary;
           margin-top: 25px;
           padding: 25px;
           background: $clrBox;
           border-radius: 10px;
+
           span {
             font-weight: 600;
             color: clrOrange;

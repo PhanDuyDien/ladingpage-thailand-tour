@@ -61,6 +61,14 @@ ul {
   list-style: none;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
 .main {
   max-width: 1920px;
   margin: 0 auto;
@@ -1087,6 +1095,10 @@ ul {
   top: 7px;
 }
 
+.tours-detail .tours-timeline .timeline-box input[type='checkbox']:checked ~ .box-detail {
+  display: block;
+}
+
 .tours-detail .tours-timeline .timeline-box .box-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1100,6 +1112,7 @@ ul {
 }
 
 .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
+  cursor: pointer;
   background: #110b90;
   background: -webkit-gradient(linear, left top, right top, from(#110b90), to(#0066e2));
   background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
@@ -1153,6 +1166,7 @@ ul {
 }
 
 .tours-detail .tours-timeline .timeline-box .box-detail {
+  display: none;
   font-size: 20px;
   font-family: "Myriad Pro", Myriad, sans-serif;
   margin-top: 25px;
@@ -1399,14 +1413,19 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-.service-main .service-content .service-detail p {
+.service-main .service-content .service-detail .service-title .tabs {
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
   font-style: italic;
 }
 
-.service-main .service-content .service-detail p span {
+.service-main .service-content .service-detail .service-title .tabs span {
+  color: black;
+  cursor: pointer;
+}
+
+.service-main .service-content .service-detail .service-title .tabs .active {
   color: #f27509;
 }
 
@@ -1429,6 +1448,14 @@ ul {
           align-items: flex-start;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+}
+
+.service-main .service-content .service-detail .service-list .tab-content ul {
+  display: none;
+}
+
+.service-main .service-content .service-detail .service-list .tab-content .active {
+  display: block;
 }
 
 .service-main .service-content .service-detail .service-slider {
