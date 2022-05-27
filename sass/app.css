@@ -1582,7 +1582,7 @@ a:hover {
   .service .service-main .service-content .service-detail .service-title h3 {
     font-size: 70px;
   }
-  .service .service-main .service-content .service-detail .service-title p {
+  .service .service-main .service-content .service-detail .service-title .tabs {
     font-size: 18px;
   }
   .service .service-main .service-content .service-detail .service-slider {
