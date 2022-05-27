@@ -663,10 +663,6 @@ a:hover {
   .hero-content .header-menu {
     margin-left: 70px;
   }
-  .hero-content .header-menu .nav-input:checked ~ .menu-box .menu-list {
-    left: 0;
-    opacity: 1;
-  }
   .hero-content .header-menu .menu-box .nav-close {
     display: block;
   }
@@ -700,6 +696,15 @@ a:hover {
   }
   .hero-content .header-menu .menu-box .menu-list .menu-circle {
     display: none;
+  }
+  .hero-content .header-menu .menu-box .open {
+    left: 0;
+    opacity: 1;
+  }
+  .hero-content .header-menu .menu-box .open .menu-item {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .hero-content .banner-title .heading-blue-gradient {
     width: 60%;
@@ -895,6 +900,11 @@ a:hover {
   margin: 30px 0;
 }
 
+.introduction-info .info-content .btn {
+  position: relative;
+  z-index: 999;
+}
+
 .introduction-slider {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1016,7 +1026,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    top: -30px;
+    top: -10px;
     left: 11px;
   }
   .introduction-slider .slider-toggle {
@@ -1700,6 +1710,9 @@ a:hover {
   }
   .service-main .service-content .service-detail .service-title {
     text-align: center;
+  }
+  .service-main .service-content .service-detail .service-title .tabs {
+    font-size: 15px;
   }
   .service-main .service-content .service-detail .service-title h3 {
     font-size: 26px !important;

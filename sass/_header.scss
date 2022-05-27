@@ -456,10 +456,9 @@
     .header-menu {
       margin-left: 70px;
 
-      .nav-input:checked ~ .menu-box .menu-list {
-        left: 0;
-        opacity: 1;
-      }
+      // .nav-input:checked ~ .menu-box .menu-list {
+
+      // }
 
       .menu-box {
         .nav-close {
@@ -494,6 +493,15 @@
 
           .menu-circle {
             display: none;
+          }
+        }
+
+        .open {
+          left: 0;
+          opacity: 1;
+          .menu-item {
+            opacity: 1;
+            transform: scale(1);
           }
         }
       }

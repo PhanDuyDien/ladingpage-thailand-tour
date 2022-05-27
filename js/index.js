@@ -1,22 +1,16 @@
-// window.onload = function () {
-//   var tabs = document.getElementById('tab-container').children
-//   var tabcontents = document.getElementById('tab-content').children
-
-//   var myFunction = function () {
-//     var tabchange = this.tabindex
-//     for (var int = 0; int < tabcontents.length; int++) {
-//       tabcontents[int].className = 'tabcontent'
-//       tabs[int].className = 'tab'
-//     }
-//     tabcontents[tabchange].classList.add('tab-active')
-//     this.classList.add('current-tab')
-//   }
-
-//   for (var index = 0; index < tabs.length; index++) {
-//     tabs[index].tabindex = index
-//     tabs[index].addEventListener('click', myFunction, false)
-//   }
-// }
+$('.menu-rounded').on('click', function () {
+  // $(this).toggleClass('open')
+  $('.menu-list').toggleClass('open')
+})
+$('.nav-close').on('click', function () {
+  // $(this).toggleClass('open')
+  $('.menu-list').removeClass('open')
+})
+// REMOVE X & COLLAPSE NAV ON ON CLICK
+$('.menu-item a').on('click', function () {
+  $('.menu-list').removeClass('open')
+  // $('.menu-left').removeClass('collapse')
+})
 
 $(document).ready(function () {
   // Variables
