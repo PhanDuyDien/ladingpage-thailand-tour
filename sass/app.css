@@ -842,7 +842,7 @@ a:hover {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 368px) {
   .hero {
     min-height: 100vh;
   }
@@ -1295,6 +1295,7 @@ a:hover {
     padding: 0;
   }
   .tours-detail .tours-timeline .timeline-box .box-detail {
+    display: block;
     margin-top: 15px;
     font-size: 14px;
   }
@@ -1924,7 +1925,6 @@ a:hover {
 }
 
 .feedback {
-  padding: 40px 0;
   overflow-x: hidden;
 }
 
@@ -2169,8 +2169,9 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  min-height: 130vh;
+  min-height: 100vh;
   overflow: visible;
+  padding: 40px 0;
 }
 
 .subscribe::after {
@@ -2220,13 +2221,6 @@ a:hover {
 
 .subscribe-wrapper {
   position: relative;
-  top: 120px;
-  left: -100px;
-}
-
-.subscribe-wrapper::after {
-  position: absolute;
-  content: '';
   width: 900px;
   height: 800px;
   background-color: white;
@@ -2235,23 +2229,26 @@ a:hover {
   border-radius: 62% 36% 30% 73% / 37% 41% 59% 65%;
   top: -72px;
   left: -25px;
-  z-index: -2;
+  z-index: 99;
 }
 
 .subscribe-wrapper::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 65px;
   background: url(../image/Shape-tour.png);
-  width: 900px;
-  height: 800px;
+  width: 700px;
+  height: 720px;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .subscribe-title {
+  position: absolute;
+  right: 140px;
+  top: 80px;
   text-align: right;
 }
 
@@ -2261,7 +2258,7 @@ a:hover {
   background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 900;
   font-style: italic;
   text-transform: capitalize;
@@ -2273,16 +2270,18 @@ a:hover {
   background: linear-gradient(to top, #f27509 45%, #fdd819 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 900;
   font-style: italic;
 }
 
 .subscribe-form {
   position: absolute;
-  width: 90%;
-  top: 190px;
-  right: -18px;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 250px;
   /* active state */
 }
 
@@ -2405,7 +2404,7 @@ a:hover {
 
 .subscribe .takecare {
   position: relative;
-  top: 500px;
+  top: 430px;
   left: -40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2533,8 +2532,11 @@ a:hover {
 
 @media (max-width: 1918px) {
   .subscribe {
-    min-height: 135vh;
     overflow-x: hidden;
+  }
+  .subscribe-wrapper {
+    top: -70px;
+    left: -190px;
   }
 }
 
@@ -2551,35 +2553,14 @@ a:hover {
     margin: 16px 0;
   }
   .subscribe-wrapper {
-    top: 118px;
-    left: -172px;
-  }
-  .subscribe-wrapper::after {
-    width: 836px;
-    height: 664px;
-  }
-  .subscribe-wrapper::before {
-    width: 813px;
-    height: 801px;
-    top: -103px;
+    top: -50px;
+    left: -270px;
   }
   .subscribe .takecare {
     top: 390px;
   }
   .subscribe .takecare .btn-contact .btn {
     font-size: 24px;
-  }
-  .subscribe-title {
-    position: absolute;
-    right: -64px;
-    top: -28px;
-  }
-  .subscribe-title h3 {
-    font-size: 60px;
-  }
-  .subscribe-form {
-    top: 150px;
-    right: -62px;
   }
 }
 
@@ -2619,8 +2600,12 @@ a:hover {
     border-radius: 30px;
     padding: 30px;
   }
-  .subscribe-wrapper::after {
-    display: none;
+  .subscribe-wrapper::before {
+    width: 540px;
+    height: 550px;
+    top: 276px;
+    left: 380px;
+    z-index: 0;
   }
   .subscribe-title {
     position: unset;
@@ -2634,8 +2619,9 @@ a:hover {
   }
   .subscribe-form {
     margin-top: 30px;
-    position: unset;
-    width: 100%;
+    position: relative;
+    width: 90%;
+    top: 0;
   }
   .subscribe-form .input-content {
     width: 100%;
@@ -2685,9 +2671,10 @@ a:hover {
     padding: 50px;
   }
   .subscribe-wrapper::before {
-    width: 698px;
-    height: 642px;
-    top: -31px;
+    width: 537px;
+    height: 563px;
+    top: 339px;
+    left: 85px;
   }
   .subscribe-title {
     text-align: center;
@@ -2761,6 +2748,9 @@ a:hover {
   .subscribe-wrapper {
     padding: 12px;
   }
+  .subscribe-wrapper::before {
+    display: none;
+  }
   .subscribe-title h3 {
     font-size: 26px;
   }
@@ -2778,6 +2768,10 @@ a:hover {
   }
   .subscribe-form input {
     font-size: 12px;
+  }
+  .subscribe-form input:focus ~ label,
+  .subscribe-form input:valid ~ label {
+    font-size: 10px;
   }
   .subscribe .takecare {
     display: none;

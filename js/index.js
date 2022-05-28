@@ -54,6 +54,10 @@ $(document).ready(function () {
 
 var swiperIntroduction = new Swiper('.introduction-slider', {
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.slider-toggle',
     clickable: true,
@@ -62,6 +66,10 @@ var swiperIntroduction = new Swiper('.introduction-slider', {
 
 var swiperService = new Swiper('.service-slider', {
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.slider-toggle',
     clickable: true,
@@ -73,6 +81,10 @@ var swiperFeedback = new Swiper('.slider-container', {
   loop: true,
   mousewheel: {
     invert: false,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   // autoHeight: true,
   pagination: {

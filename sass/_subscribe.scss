@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  min-height: 130vh;
+  min-height: 100vh;
   overflow: visible;
+  padding: 40px 0;
 
   // &::before {
   //   content: '';
@@ -60,31 +61,29 @@
 
   &-wrapper {
     position: relative;
-    top: 120px;
-    left: -100px;
+    width: 900px;
+    height: 800px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
+    border-radius: 62% 36% 30% 73% / 37% 41% 59% 65%;
+    top: -72px;
+    left: -25px;
+    z-index: $z-index-1;
 
-    &::after {
-      position: absolute;
-      content: '';
-      width: 900px;
-      height: 800px;
-      background-color: white;
-      -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
-      box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
-      border-radius: 62% 36% 30% 73% / 37% 41% 59% 65%;
-      top: -72px;
-      left: -25px;
-      z-index: $z-index-0-1;
-    }
+    // &::after {
+    //   position: absolute;
+    //   content: '';
+    // }
 
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50px;
+      left: 65px;
       background: url(../image/Shape-tour.png);
-      width: 900px;
-      height: 800px;
+      width: 700px;
+      height: 720px;
       z-index: -1;
       background-size: cover;
       background-repeat: no-repeat;
@@ -92,10 +91,13 @@
   }
 
   &-title {
+    position: absolute;
+    right: 140px;
+    top: 80px;
     text-align: right;
     h3 {
       @include text-gradient-secondary;
-      font-size: 72px;
+      font-size: 60px;
       font-weight: 900;
       font-style: italic;
       text-transform: capitalize;
@@ -103,7 +105,7 @@
 
     h2 {
       @include text-gradient-primary;
-      font-size: 40px;
+      font-size: 36px;
       font-weight: 900;
       font-style: italic;
     }
@@ -111,9 +113,10 @@
 
   &-form {
     position: absolute;
-    width: 90%;
-    top: 190px;
-    right: -18px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
 
     button {
       margin-top: 50px;
@@ -242,7 +245,7 @@
 
   .takecare {
     position: relative;
-    top: 500px;
+    top: 430px;
     left: -40px;
     display: flex;
     align-items: center;
@@ -334,8 +337,11 @@
 
 @media (max-width: $xxxl) {
   .subscribe {
-    min-height: 135vh;
     overflow-x: hidden;
+    &-wrapper {
+      top: -70px;
+      left: -190px;
+    }
   }
 }
 
@@ -357,18 +363,8 @@
     }
 
     &-wrapper {
-      top: 118px;
-      left: -172px;
-      &::after {
-        width: 836px;
-        height: 664px;
-      }
-
-      &::before {
-        width: 813px;
-        height: 801px;
-        top: -103px;
-      }
+      top: -50px;
+      left: -270px;
     }
 
     .takecare {
@@ -378,20 +374,6 @@
           font-size: 24px;
         }
       }
-    }
-
-    &-title {
-      position: absolute;
-      right: -64px;
-      top: -28px;
-      h3 {
-        font-size: 60px;
-      }
-    }
-
-    &-form {
-      top: 150px;
-      right: -62px;
     }
   }
 }
@@ -435,8 +417,12 @@
       border-radius: 30px;
       padding: 30px;
 
-      &::after {
-        display: none;
+      &::before {
+        width: 540px;
+        height: 550px;
+        top: 276px;
+        left: 380px;
+        z-index: 0;
       }
     }
 
@@ -454,8 +440,9 @@
 
     &-form {
       margin-top: 30px;
-      position: unset;
-      width: 100%;
+      position: relative;
+      width: 90%;
+      top: 0;
 
       .input-content {
         width: 100%;
@@ -512,9 +499,10 @@
     &-wrapper {
       padding: 50px;
       &::before {
-        width: 698px;
-        height: 642px;
-        top: -31px;
+        width: 537px;
+        height: 563px;
+        top: 339px;
+        left: 85px;
       }
     }
 
@@ -604,6 +592,10 @@
 
     &-wrapper {
       padding: 12px;
+
+      &::before {
+        display: none;
+      }
     }
 
     &-title {
@@ -627,6 +619,11 @@
 
       input {
         font-size: 12px;
+      }
+
+      input:focus ~ label,
+      input:valid ~ label {
+        font-size: 10px;
       }
     }
 
