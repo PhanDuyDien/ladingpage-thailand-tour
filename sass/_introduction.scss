@@ -124,6 +124,13 @@
 @media (max-width: $md) {
   .introduction {
     margin: 0;
+
+    &::after {
+      left: 0px;
+      top: -20px;
+      width: 95%;
+      height: 90%;
+    }
     &-info {
       width: 100%;
 

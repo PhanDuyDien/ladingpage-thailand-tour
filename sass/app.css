@@ -169,47 +169,6 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 991.98px) {
-  .header-top {
-    display: block;
-    font-size: 14px;
-    padding: 10px 30px;
-    text-align: right;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #f27509), color-stop(110%, #fdd819));
-    background: linear-gradient(to bottom, #f27509 22%, #fdd819 110%);
-    color: white;
-  }
-  .header-top-line {
-    border: 1px solid #f27509;
-    height: 25px;
-    -webkit-transform: rotate(44deg);
-            transform: rotate(44deg);
-    margin: 0 15px;
-  }
-  .header-top-email {
-    margin-left: 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .header-top {
-    font-size: 12px;
-    padding: 2px 20px;
-  }
-  .header-top .header-top-email {
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header-top .header-top-content {
-    display: block;
-  }
-}
-
 .hero {
   position: relative;
   background-repeat: no-repeat;
@@ -438,7 +397,7 @@ a:hover {
   transition: all 0.2s ease 0.35s;
 }
 
-.hero-content .header-menu .menu-box .menu-list .menu-item:nth-child(2) {
+.hero-content .header-menu .menu-box .menu-list .menu-item:nth-child(1) {
   margin-top: 40px;
 }
 
@@ -467,7 +426,7 @@ a:hover {
 }
 
 .hero-content .header-menu .nav-input:checked ~ .menu-box::after {
-  height: calc(100vh - 330px);
+  height: 650px;
 }
 
 .hero-content .header-menu .nav-input:checked ~ .menu-box .menu-item {
@@ -663,48 +622,11 @@ a:hover {
   .hero-content .header-menu {
     margin-left: 70px;
   }
-  .hero-content .header-menu .menu-box .nav-close {
-    display: block;
+  .hero-content .header-menu .menu-box .menu-list .menu-item a:hover {
+    padding: 8px 12px;
   }
-  .hero-content .header-menu .menu-box::after {
-    display: none;
-  }
-  .hero-content .header-menu .menu-box .menu-list {
-    z-index: 99999;
-    padding: 0;
-    background: gainsboro;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -2000px;
-    opacity: 0;
-    -webkit-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-    top: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero-content .header-menu .menu-box .menu-list .menu-item {
-    font-size: 20px;
-  }
-  .hero-content .header-menu .menu-box .menu-list .menu-item:first-child {
-    margin: 0;
-  }
-  .hero-content .header-menu .menu-box .menu-list .menu-circle {
-    display: none;
-  }
-  .hero-content .header-menu .menu-box .open {
-    left: 0;
-    opacity: 1;
-  }
-  .hero-content .header-menu .menu-box .open .menu-item {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  .hero-content .header-menu .nav-input:checked ~ .menu-box::after {
+    height: 440px;
   }
   .hero-content .banner-title .heading-blue-gradient {
     width: 60%;
@@ -732,8 +654,17 @@ a:hover {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .hero .header .col-7 {
+    width: 75% !important;
+  }
+  .hero .header .col-4 {
+    width: 16.66666667% !important;
+  }
   .hero-content .header-content {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
   }
   .hero-content .header-sign {
     padding: 8px;
@@ -760,10 +691,29 @@ a:hover {
     word-spacing: -0.8cm;
     line-height: 1;
   }
+  .hero-content .header-menu {
+    margin-left: 10px;
+  }
+  .hero-content .header-menu .menu-rounded {
+    width: 75px;
+    height: 125px;
+    row-gap: 40px;
+  }
+  .hero-content .header-menu .menu-box .menu-list {
+    width: 150%;
+    left: -100%;
+    row-gap: 30px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item {
+    font-size: 10px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item:nth-child(1) {
+    margin-top: 20px;
+  }
   .hero-background .hero-logo {
-    top: 36px;
+    top: 70px;
     left: 95px;
-    width: 110px;
+    width: 90px;
   }
   .hero-background .hero-image {
     top: 100px;
@@ -969,6 +919,12 @@ a:hover {
 @media (max-width: 991.98px) {
   .introduction {
     margin: 0;
+  }
+  .introduction::after {
+    left: 0px;
+    top: -20px;
+    width: 95%;
+    height: 90%;
   }
   .introduction-info {
     width: 100%;
