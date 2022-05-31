@@ -360,6 +360,10 @@
       }
     }
   }
+
+  &-title-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: $xxxl) {
@@ -642,13 +646,13 @@
 
   .hero-background {
     .hero-image {
-      top: 220px;
-      width: 100%;
-      left: 15px;
+      top: 286px;
+      min-width: 160%;
+      left: -125px;
     }
     .hero-logo {
-      left: 40px;
-      width: 80px;
+      left: 20px;
+      width: 100px;
       top: 80px;
     }
   }
@@ -685,15 +689,19 @@
     }
 
     .header-menu {
-      margin-left: 10px;
+      margin-left: -40%;
 
       p {
-        display: none;
+        display: block;
       }
 
       .menu-rounded {
-        width: 70px;
-        height: 100px;
+        row-gap: 35px;
+        width: 60px;
+        height: 110px;
+        img {
+          width: 20px;
+        }
       }
 
       .menu-line {
@@ -708,35 +716,53 @@
     .banner-title {
       .heading-blue-gradient {
         width: 103%;
-        font-size: 140px;
+        font-size: 105px;
         letter-spacing: -0.2cm;
       }
 
       .heading-blue {
-        font-size: 140px;
+        font-size: 100px;
         letter-spacing: -0.3cm;
         word-spacing: 1cm;
 
         .heading-orange-gradient {
-          display: none;
+          display: none !important;
         }
       }
 
       .title-mobile {
-        display: block !important;
-        font-size: 68px;
-        margin-left: 10px;
-        letter-spacing: -0.1cm;
-        word-spacing: -0.5cm;
-        line-height: 1;
+        display: none !important;
       }
 
       .banner-des {
-        margin-left: 0px;
-        line-height: 0;
-        font-size: 17px;
-        letter-spacing: 0;
+        display: none;
       }
+    }
+  }
+
+  .hero-title-mobile {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    padding: 0 10px;
+    line-height: 1;
+    text-align: center;
+    .hero-text {
+      @include text-gradient-primary;
+      font-size: 75px;
+      font-weight: 900;
+      letter-spacing: -0.1cm;
+      word-spacing: -0.45cm;
+    }
+
+    .hero-des {
+      color: #ff8326;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1cm;
     }
   }
 }
@@ -744,5 +770,16 @@
 @media (max-width: $s) {
   .hero {
     min-height: 100vh;
+  }
+
+  .hero-title-mobile {
+    bottom: 10px;
+
+    .hero-text {
+      font-size: 70px;
+    }
+    .hero-des {
+      font-size: 10px;
+    }
   }
 }
