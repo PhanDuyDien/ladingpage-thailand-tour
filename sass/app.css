@@ -759,7 +759,7 @@ a:hover {
             flex-direction: column;
     row-gap: 5px;
     padding-top: 10px;
-    font-size: 10px;
+    font-size: 9px;
   }
   .hero-content .header-content .line {
     height: 16px;
@@ -843,7 +843,7 @@ a:hover {
     min-height: 100vh;
   }
   .hero-title-mobile {
-    bottom: 10px;
+    bottom: 20px;
   }
   .hero-title-mobile .hero-text {
     font-size: 70px;
