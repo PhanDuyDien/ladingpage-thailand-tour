@@ -750,7 +750,7 @@ a:hover {
 
 @media (max-width: 575.98px) {
   .hero {
-    min-height: 85vh;
+    min-height: 95vh;
   }
   .hero::after {
     background-size: contain;
@@ -893,7 +893,7 @@ a:hover {
 
 @media (max-width: 376px) {
   .hero {
-    min-height: 100vh;
+    max-height: 90vh;
   }
   .hero-title-mobile {
     bottom: 10px;

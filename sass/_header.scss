@@ -637,7 +637,7 @@
 
 @media (max-width: $xs) {
   .hero {
-    min-height: 85vh;
+    min-height: 95vh;
 
     &::after {
       background-size: contain;
@@ -807,7 +807,7 @@
 
 @media (max-width: $s) {
   .hero {
-    min-height: 100vh;
+    max-height: 90vh;
   }
 
   .hero-title-mobile {
