@@ -78,6 +78,25 @@ a {
   align-items: center;
 }
 
+.flex-text {
+  display: flex;
+  align-items: flex-start;
+  img {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: $xs) {
+    img {
+      margin-left: 15px;
+      margin-right: 10px;
+      margin-top: 3px;
+      width: 14px;
+    }
+  }
+}
+
 .slider-toggle {
   display: flex;
   align-items: flex-end;

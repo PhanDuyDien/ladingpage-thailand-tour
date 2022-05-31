@@ -134,6 +134,30 @@ a:hover {
           align-items: center;
 }
 
+.flex-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-text img {
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .flex-text img {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+    width: 14px;
+  }
+}
+
 .slider-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,10 +1000,11 @@ a:hover {
 
 @media (max-width: 1199.98px) {
   .introduction::after {
-    left: -89px;
-    top: -352px;
-    width: 100%;
-    height: 249%;
+    left: 170px;
+    top: -145px;
+    width: 60%;
+    height: 145%;
+    background-size: cover;
   }
   .introduction-info {
     padding: 0;
@@ -1040,7 +1065,7 @@ a:hover {
 
 @media (max-width: 575.98px) {
   .introduction::after {
-    top: -292px;
+    top: -60px;
   }
   .introduction-info .info-content h3 {
     font-size: 60px;
@@ -1227,7 +1252,7 @@ a:hover {
 
 .tours-detail .tours-timeline .timeline-box .box-detail span {
   font-weight: 600;
-  color: clrOrange;
+  color: #f27509;
 }
 
 @media (max-width: 1598px) {
@@ -1256,7 +1281,7 @@ a:hover {
     width: 25%;
   }
   .tours-detail .tours-timeline .timeline-box .box-detail {
-    padding: 15px 5px;
+    padding: 15px 10px;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading {
     -webkit-box-orient: vertical;
@@ -1487,6 +1512,8 @@ a:hover {
   top: 180px;
   padding-left: 66px;
   z-index: 99;
+  height: 300px;
+  overflow: visible;
 }
 
 .service-main .service-content .service-detail .service-list .service-item {
@@ -1762,6 +1789,7 @@ a:hover {
     font-size: 14px !important;
   }
   .service-main .service-content .service-detail .service-list {
+    height: 360px;
     font-size: 14px !important;
     padding: 10px 20px !important;
   }
@@ -1893,11 +1921,15 @@ a:hover {
 }
 
 @media (max-width: 1199.98px) {
+  .question {
+    margin-bottom: 80px;
+  }
   .question::after {
-    left: -38px;
-    top: -378px;
-    width: 100%;
-    height: 120%;
+    left: 100px;
+    top: -250px;
+    width: 70%;
+    height: 100%;
+    background-size: cover;
   }
   .question-info {
     top: -170px;
@@ -1936,6 +1968,15 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+  .question {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .question::after {
+    left: 30px;
+    top: -90px;
+    width: 85%;
+  }
   .question-flex {
     width: 100%;
   }

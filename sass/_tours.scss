@@ -107,7 +107,7 @@
 
           span {
             font-weight: 600;
-            color: clrOrange;
+            color: $clrOrange;
           }
         }
       }
@@ -161,7 +161,7 @@
       .tours-timeline {
         .timeline-box {
           .box-detail {
-            padding: 15px 5px;
+            padding: 15px 10px;
           }
           .box-heading {
             flex-direction: column;

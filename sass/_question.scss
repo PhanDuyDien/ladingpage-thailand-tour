@@ -103,11 +103,13 @@
 
 @media (max-width: $lg) {
   .question {
+    margin-bottom: 80px;
     &::after {
-      left: -38px;
-      top: -378px;
-      width: 100%;
-      height: 120%;
+      left: 100px;
+      top: -250px;
+      width: 70%;
+      height: 100%;
+      background-size: cover;
     }
     &-info {
       top: -170px;
@@ -170,6 +172,13 @@
 
 @media (max-width: $sm) {
   .question {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    &::after {
+      left: 30px;
+      top: -90px;
+      width: 85%;
+    }
     &-flex {
       &::after {
         left: -285px;
