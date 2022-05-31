@@ -634,6 +634,10 @@
 @media (max-width: $xs) {
   .hero {
     min-height: 85vh;
+
+    &::after {
+      background-size: contain;
+    }
   }
 
   .hero-background {
@@ -643,9 +647,9 @@
       left: 15px;
     }
     .hero-logo {
-      left: 84px;
-      width: 94px;
-      top: 65px;
+      left: 40px;
+      width: 80px;
+      top: 80px;
     }
   }
 
@@ -659,13 +663,25 @@
     }
 
     .header-content {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      padding-top: 10px;
+      font-size: 10px;
+
+      .line {
+        height: 16px;
+      }
+
+      .header-email {
+        margin-left: 0;
+      }
     }
 
     .header-sign {
       padding-left: 10px;
       padding-top: 10px;
-      width: 40px;
+      width: 30px;
     }
 
     .header-menu {
