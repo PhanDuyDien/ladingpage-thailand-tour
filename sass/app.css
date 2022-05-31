@@ -779,19 +779,48 @@ a:hover {
     display: block;
   }
   .hero-content .header-menu .menu-rounded {
-    row-gap: 35px;
+    row-gap: 25px;
     width: 60px;
-    height: 110px;
+    height: 95px;
   }
   .hero-content .header-menu .menu-rounded img {
-    width: 20px;
+    width: 14px;
+  }
+  .hero-content .header-menu .menu-rounded p {
+    letter-spacing: 0.1cm;
   }
   .hero-content .header-menu .menu-line {
     display: none;
   }
+  .hero-content .header-menu .menu-box::after {
+    left: 70%;
+    margin-left: 0;
+  }
+  .hero-content .header-menu .menu-box .menu-list {
+    padding-right: 9px;
+    width: 260%;
+    left: -190%;
+    row-gap: 15px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item {
+    font-size: 8px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item:nth-child(1) {
+    margin-top: 15px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item a:hover {
+    padding: 4px 8px;
+  }
+  .hero-content .header-menu .menu-box .menu-list .menu-item .menu-circle {
+    width: 8px;
+    height: 8px;
+  }
+  .hero-content .header-menu .nav-input:checked ~ .menu-box::after {
+    height: 210px;
+  }
   .hero-content .banner-title .heading-blue-gradient {
     width: 103%;
-    font-size: 105px;
+    font-size: 100px;
     letter-spacing: -0.2cm;
   }
   .hero-content .banner-title .heading-blue {
