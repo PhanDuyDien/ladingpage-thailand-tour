@@ -843,7 +843,7 @@ a:hover {
     min-height: 100vh;
   }
   .hero-title-mobile {
-    bottom: 20px;
+    bottom: 10px;
   }
   .hero-title-mobile .hero-text {
     font-size: 70px;
