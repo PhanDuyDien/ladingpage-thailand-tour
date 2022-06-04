@@ -162,9 +162,16 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.slider-toggle .swiper-pagination-bullet-active {
+  background: #f27509;
 }
 
 .slider-toggle p {
@@ -257,7 +264,7 @@ a:hover {
 .hero-content .header-content {
   width: 100%;
   font-size: 15px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .hero-content .header-content .line {
@@ -437,8 +444,9 @@ a:hover {
   background-color: #f27509;
   padding: 9px 18px;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.79);
-  box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 .hero-content .header-menu .menu-box .menu-list .menu-item .menu-circle {
@@ -501,7 +509,7 @@ a:hover {
 
 .hero-content .banner {
   position: relative;
-  top: 60px;
+  top: 70px;
   z-index: -1;
 }
 
@@ -584,6 +592,9 @@ a:hover {
   .hero-background .hero-image {
     left: 180px;
   }
+  .hero-content .header-content {
+    padding-top: 42px;
+  }
 }
 
 @media (max-width: 1598px) {
@@ -592,6 +603,12 @@ a:hover {
   }
   .hero-image {
     width: 80%;
+  }
+  .hero-content .header-content {
+    padding-top: 30px;
+  }
+  .hero-content .header-content .line {
+    margin: 0px 46px;
   }
   .hero-content .header-menu {
     margin-left: 140px;
@@ -642,7 +659,11 @@ a:hover {
     top: -135px;
   }
   .hero-content .header-content {
+    padding-top: 20px;
     font-size: 13px;
+  }
+  .hero-content .header-content .line {
+    margin: 0 15px;
   }
   .hero-content .header-sign {
     padding: 15px;
@@ -927,7 +948,17 @@ a:hover {
   z-index: -2;
 }
 
+.introduction .container {
+  overflow: hidden;
+}
+
 .introduction-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introduction-content .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -986,6 +1017,13 @@ a:hover {
   background: #f27509;
 }
 
+.introduction-slider-toggle {
+  position: relative;
+  right: 150px !important;
+  left: unset !important;
+  bottom: unset !important;
+}
+
 @media (max-width: 1598px) {
   .introduction-info {
     width: 230%;
@@ -1022,6 +1060,9 @@ a:hover {
   }
   .introduction-slider img {
     width: 95%;
+  }
+  .introduction-slider-toggle {
+    right: 60px !important;
   }
 }
 
@@ -1097,6 +1138,9 @@ a:hover {
   .introduction-slider .slider-toggle {
     padding: 0;
   }
+  .introduction-slider-toggle {
+    right: 10px !important;
+  }
 }
 
 .tours {
@@ -1145,7 +1189,7 @@ a:hover {
 .tours-intro .intro-desc {
   font-family: "Myriad Pro", Myriad, sans-serif;
   max-width: 1440px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -1168,6 +1212,7 @@ a:hover {
   position: absolute;
   left: -76px;
   top: 7px;
+  width: 30px;
 }
 
 .tours-detail .tours-timeline .timeline-box input[type='checkbox']:checked ~ .box-detail {
@@ -1201,10 +1246,14 @@ a:hover {
           align-items: center;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+}
+
+.tours-detail .tours-timeline .timeline-box .box-heading .box-title img {
+  width: 30px;
 }
 
 .tours-detail .tours-timeline .timeline-box .box-heading .box-check {
@@ -1235,7 +1284,7 @@ a:hover {
 }
 
 .tours-detail .tours-timeline .timeline-box .box-heading .box-check .check-item p {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   font-style: italic;
 }
@@ -1456,8 +1505,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 900px;
-  height: 900px;
+  width: 930px;
+  height: 930px;
   right: -100px;
   bottom: -50px;
   border-radius: 70% 30% 30% 70% / 36% 37% 63% 64%;
@@ -1472,14 +1521,14 @@ a:hover {
 
 .service-main .service-content .service-detail .service-title {
   position: absolute;
-  top: 8px;
+  top: 40px;
   right: 130px;
   text-align: right;
 }
 
 .service-main .service-content .service-detail .service-title h3 {
   text-transform: capitalize;
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 900;
   font-style: italic;
   background: #f27509;
@@ -1503,6 +1552,7 @@ a:hover {
 
 .service-main .service-content .service-detail .service-title .tabs .active {
   color: #f27509;
+  font-weight: bold;
 }
 
 .service-main .service-content .service-detail .service-list {
@@ -1510,7 +1560,7 @@ a:hover {
   line-height: 1.5;
   position: absolute;
   top: 180px;
-  padding-left: 66px;
+  padding-left: 100px;
   z-index: 99;
   height: 300px;
   overflow: visible;
@@ -1538,7 +1588,7 @@ a:hover {
 
 .service-main .service-content .service-detail .service-slider {
   position: absolute;
-  bottom: 30px;
+  bottom: 5px;
   right: -135px;
 }
 
@@ -1675,13 +1725,14 @@ a:hover {
 
 @media (max-width: 1199.98px) {
   .service {
-    padding: 80px 0;
+    padding-top: 80px;
+    overflow: hidden;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
   .service::after {
-    left: 70px;
+    left: 00px;
     width: 100%;
     background-size: contain;
   }
@@ -1845,7 +1896,7 @@ a:hover {
   background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 102px;
+  font-size: 100px;
   font-weight: 900;
   text-transform: capitalize;
   font-style: italic;
@@ -1867,7 +1918,7 @@ a:hover {
 }
 
 .question-info .info-content .info-list .info-item label {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   color: black;
   border-bottom: 2px solid black;
@@ -1880,8 +1931,8 @@ a:hover {
   display: none;
   width: 60%;
   line-height: 1.3;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   padding-left: 25px;
 }
 
@@ -1897,7 +1948,7 @@ a:hover {
 
 .question-image {
   position: relative;
-  left: 70px;
+  left: 160px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -2006,7 +2057,7 @@ a:hover {
 }
 
 .feedback {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .feedback-grid {
@@ -2019,6 +2070,12 @@ a:hover {
 .feedback-item {
   width: 192px;
   height: 126px;
+  overflow: hidden;
+}
+
+.feedback-item:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .feedback-item img {
@@ -2026,6 +2083,11 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
 }
 
 .feedback-item:nth-child(12) {
@@ -2099,6 +2161,8 @@ a:hover {
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
   border-radius: 66% 34% 32% 68% / 68% 72% 28% 32%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .feedback .item-slider .slider-container .slider-item .slider-box-quote {
@@ -2252,7 +2316,6 @@ a:hover {
   background-position: left;
   min-height: 100vh;
   overflow: visible;
-  padding: 40px 0;
 }
 
 .subscribe::after {
@@ -2300,6 +2363,16 @@ a:hover {
   margin: 20px 0;
 }
 
+.subscribe-heading .btn {
+  font-size: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.subscribe-heading .btn img {
+  width: 15px;
+}
+
 .subscribe-wrapper {
   position: relative;
   width: 900px;
@@ -2339,7 +2412,7 @@ a:hover {
   background: linear-gradient(to right, #110b90 0%, #0066e2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
   font-style: italic;
   text-transform: capitalize;
@@ -2367,8 +2440,9 @@ a:hover {
 }
 
 .subscribe-form button {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 5px 30px;
+  font-size: 20px;
 }
 
 .subscribe-form .group {
@@ -2484,9 +2558,9 @@ a:hover {
 }
 
 .subscribe .takecare {
-  position: relative;
-  top: 430px;
-  left: -40px;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2497,7 +2571,10 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1000;
 }
 
 .subscribe .takecare .floating-btn {
@@ -2586,31 +2663,6 @@ a:hover {
   transition: all 0.2s ease 0.05s;
 }
 
-.subscribe .takecare .btn-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.subscribe .takecare .btn-contact p {
-  font-weight: 600;
-  font-style: italic;
-}
-
-.subscribe .takecare .btn-contact .btn {
-  padding: 12px 20px;
-}
-
 @media (max-width: 1918px) {
   .subscribe {
     overflow-x: hidden;
@@ -2636,12 +2688,6 @@ a:hover {
   .subscribe-wrapper {
     top: -50px;
     left: -270px;
-  }
-  .subscribe .takecare {
-    top: 390px;
-  }
-  .subscribe .takecare .btn-contact .btn {
-    font-size: 24px;
   }
 }
 
@@ -2718,10 +2764,6 @@ a:hover {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .subscribe .takecare {
-    width: 100%;
-    top: 336px;
-  }
   .subscribe .takecare .btn-contact .btn {
     font-size: 18px;
   }
@@ -2768,15 +2810,6 @@ a:hover {
   }
   .subscribe-form {
     width: 100%;
-  }
-  .subscribe .takecare {
-    top: 444px;
-    position: fixed;
-    z-index: 9999;
-    left: 10px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .subscribe .takecare .floating-btn .action-btn {
     width: 50px;
@@ -2880,6 +2913,10 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact-info {
+  font-size: 20px;
 }
 
 .contact-address {
@@ -3150,7 +3187,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 

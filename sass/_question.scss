@@ -32,7 +32,7 @@
     .info-content {
       h3.heading {
         @include text-gradient-secondary;
-        font-size: $fs-heading-large;
+        font-size: 100px;
         font-weight: 900;
         text-transform: capitalize;
         font-style: italic;
@@ -46,7 +46,7 @@
         row-gap: 20px;
         .info-item {
           label {
-            font-size: 28px;
+            font-size: 25px;
             font-weight: 600;
             color: black;
             border-bottom: 2px solid black;
@@ -59,8 +59,8 @@
             display: none;
             width: 60%;
             line-height: 1.3;
-            font-size: 20px;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 600;
             padding-left: 25px;
           }
 
@@ -80,7 +80,7 @@
 
   &-image {
     position: relative;
-    left: 70px;
+    left: 160px;
     align-items: flex-end;
     flex-direction: column;
     z-index: $z-index-0;

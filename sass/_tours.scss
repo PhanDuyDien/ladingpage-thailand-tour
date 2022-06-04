@@ -26,7 +26,7 @@
     .intro-desc {
       font-family: $fontSecondary;
       max-width: 1440px;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
 
       span {
@@ -49,6 +49,7 @@
           position: absolute;
           left: -76px;
           top: 7px;
+          width: 30px;
         }
         // &:before {
         //   content: url('../image/circle-tour.png');
@@ -69,10 +70,14 @@
             display: flex;
             align-items: center;
             column-gap: 10px;
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 900;
             font-style: italic;
             text-transform: uppercase;
+
+            img {
+              width: 30px;
+            }
           }
 
           .box-check {
@@ -88,7 +93,7 @@
               justify-content: space-between;
 
               p {
-                font-size: 20px;
+                font-size: 19px;
                 font-weight: 600;
                 font-style: italic;
               }

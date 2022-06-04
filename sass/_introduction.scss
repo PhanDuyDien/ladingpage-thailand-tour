@@ -18,8 +18,15 @@
     z-index: $z-index-0-1;
   }
 
+  .container {
+    overflow: hidden;
+  }
+
   &-content {
     align-items: center;
+    .row {
+      align-items: center;
+    }
   }
 
   &-info {
@@ -68,6 +75,12 @@
         background: $clrOrange;
       }
     }
+  }
+  &-slider-toggle {
+    position: relative;
+    right: 150px !important;
+    left: unset !important;
+    bottom: unset !important;
   }
 }
 
@@ -118,6 +131,10 @@
       img {
         width: 95%;
       }
+    }
+
+    &-slider-toggle {
+      right: 60px !important;
     }
   }
 }
@@ -198,6 +215,10 @@
       .slider-toggle {
         padding: 0;
       }
+    }
+
+    &-slider-toggle {
+      right: 10px !important;
     }
   }
 }

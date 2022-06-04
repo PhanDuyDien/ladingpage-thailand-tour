@@ -52,12 +52,20 @@ $(document).ready(function () {
   })
 })
 
-var swiperIntroduction = new Swiper('.introduction-slider', {
+$(window).scroll(function () {
+  if ($(window).scrollTop()) {
+    $('takecare').addClass('sticky')
+  } else {
+    $('takecare').removeClass('sticky')
+  }
+})
+
+var swiperIntroduction = new Swiper('.introduction-content', {
   spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.slider-toggle',
     clickable: true,
@@ -91,4 +99,9 @@ var swiperFeedback = new Swiper('.slider-container', {
     el: '.slider-toggle',
     clickable: true,
   },
+})
+
+lightbox.option({
+  resizeDuration: 200,
+  wrapAround: true,
 })

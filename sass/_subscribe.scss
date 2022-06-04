@@ -5,7 +5,7 @@
   background-position: left;
   min-height: 100vh;
   overflow: visible;
-  padding: 40px 0;
+  // padding: 40px 0;
 
   // &::before {
   //   content: '';
@@ -57,6 +57,15 @@
       font-size: 27px;
       margin: 20px 0;
     }
+
+    .btn {
+      font-size: 20px;
+      column-gap: 10px;
+
+      img {
+        width: 15px;
+      }
+    }
   }
 
   &-wrapper {
@@ -97,7 +106,7 @@
     text-align: right;
     h3 {
       @include text-gradient-secondary;
-      font-size: 60px;
+      font-size: 70px;
       font-weight: 900;
       font-style: italic;
       text-transform: capitalize;
@@ -119,8 +128,9 @@
     top: 250px;
 
     button {
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 5px 30px;
+      font-size: 20px;
     }
 
     .group {
@@ -244,13 +254,19 @@
   }
 
   .takecare {
-    position: relative;
-    top: 430px;
-    left: -40px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: fit-content;
+    z-index: 1000;
+
+    // .sticky {
+    //   bottom: 30px;
+    //   // left: 180px;
+    // }
     .floating-btn {
       display: flex;
       align-items: center;
@@ -318,20 +334,6 @@
         }
       }
     }
-
-    .btn-contact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      p {
-        font-weight: 600;
-        font-style: italic;
-      }
-      .btn {
-        padding: 12px 20px;
-      }
-    }
   }
 }
 
@@ -365,15 +367,6 @@
     &-wrapper {
       top: -50px;
       left: -270px;
-    }
-
-    .takecare {
-      top: 390px;
-      .btn-contact {
-        .btn {
-          font-size: 24px;
-        }
-      }
     }
   }
 }
@@ -456,8 +449,8 @@
     }
 
     .takecare {
-      width: 100%;
-      top: 336px;
+      // width: 100%;
+      // top: 336px;
       .btn-contact {
         .btn {
           font-size: 18px;
@@ -521,11 +514,11 @@
     }
 
     .takecare {
-      top: 444px;
-      position: fixed;
-      z-index: 9999;
-      left: 10px;
-      width: fit-content;
+      // top: 444px;
+      // position: fixed;
+      // z-index: 9999;
+      // left: 10px;
+      // width: fit-content;
 
       .floating-btn {
         .action-btn {

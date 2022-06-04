@@ -99,7 +99,12 @@ a {
 
 .slider-toggle {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+
+  .swiper-pagination-bullet-active {
+    background: $clrOrange;
+  }
   p {
     font-size: 60px;
     font-weight: 300;

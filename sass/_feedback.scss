@@ -1,6 +1,6 @@
 .feedback {
   // padding: 40px 0;
-  overflow-x: hidden;
+  overflow: hidden;
   &-content {
   }
 
@@ -12,11 +12,21 @@
   &-item {
     width: 192px;
     height: 126px;
+    overflow: hidden;
+
+    &:hover {
+      img {
+        transform: scale(1.3);
+      }
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.2s ease-in-out;
+      transform: scale(1);
+      cursor: pointer;
     }
 
     &:nth-child(12) {
@@ -85,6 +95,7 @@
             -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
             box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.22);
             border-radius: 66% 34% 32% 68% / 68% 72% 28% 32%;
+            transform: scale(1);
           }
         }
 
