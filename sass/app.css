@@ -1026,6 +1026,7 @@ a:hover {
 
 @media (max-width: 1598px) {
   .introduction-info {
+    padding-top: 0;
     width: 230%;
   }
   .introduction-info .info-content p {
@@ -1305,6 +1306,12 @@ a:hover {
 }
 
 @media (max-width: 1598px) {
+  .tours-intro h3 {
+    font-size: 86px;
+  }
+  .tours-intro p {
+    font-size: 24px;
+  }
   .tours-intro .intro-desc {
     font-size: 18px;
   }
@@ -1343,6 +1350,9 @@ a:hover {
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
     font-size: 25px;
+  }
+  .tours-detail .tours-timeline .timeline-box:first-child .box-detail, .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-detail {
+    display: block;
   }
 }
 
@@ -1960,19 +1970,27 @@ a:hover {
 }
 
 @media (max-width: 1918px) {
-  .question-image {
-    left: 0;
+  .question {
+    overflow: hidden;
   }
 }
 
 @media (max-width: 1598px) {
   .question {
-    margin-top: 180px;
+    overflow: hidden;
+  }
+  .question-info .info-content h3.heading {
+    font-size: 86px;
+  }
+  .question-info .info-content .info-list .info-item label {
+    font-size: 22px;
   }
 }
 
 @media (max-width: 1199.98px) {
   .question {
+    overflow: visible;
+    margin-top: 160px;
     margin-bottom: 80px;
   }
   .question::after {
@@ -2671,6 +2689,10 @@ a:hover {
     top: -70px;
     left: -190px;
   }
+  .subscribe .takecare {
+    bottom: 220px;
+    left: 160px;
+  }
 }
 
 @media (max-width: 1598px) {
@@ -2688,6 +2710,16 @@ a:hover {
   .subscribe-wrapper {
     top: -50px;
     left: -270px;
+  }
+  .subscribe .takecare {
+    bottom: 200px;
+  }
+  .subscribe .takecare .floating-btn .action-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .subscribe .takecare .floating-btn .action-btn img {
+    width: 30px;
   }
 }
 
@@ -2811,35 +2843,20 @@ a:hover {
   .subscribe-form {
     width: 100%;
   }
+  .subscribe .takecare {
+    bottom: 190px;
+    left: 110px;
+  }
+  .subscribe .takecare .floating-btn .floating-menus li img {
+    width: 30px;
+    height: 30px;
+  }
   .subscribe .takecare .floating-btn .action-btn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
-  .subscribe .takecare .btn-contact:hover {
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-  }
-  .subscribe .takecare .btn-contact:hover p {
-    display: block;
-  }
-  .subscribe .takecare .btn-contact:hover span {
-    display: block;
-  }
-  .subscribe .takecare .btn-contact:hover .btn {
-    width: 100%;
-    height: 100%;
-    padding: 5px 30px;
-  }
-  .subscribe .takecare .btn-contact p {
-    display: none;
-  }
-  .subscribe .takecare .btn-contact span {
-    display: none;
-  }
-  .subscribe .takecare .btn-contact .btn {
-    width: 50px;
-    height: 50px;
-    padding: 11px 16px;
+  .subscribe .takecare .floating-btn .action-btn img {
+    width: 25px;
   }
 }
 

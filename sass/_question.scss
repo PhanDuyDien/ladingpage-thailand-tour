@@ -89,20 +89,43 @@
 
 @media (max-width: $xxxl) {
   .question {
+    overflow: hidden;
     &-image {
-      left: 0;
+      // left: 0;
     }
   }
 }
 
 @media (max-width: $xxl) {
   .question {
-    margin-top: 180px;
+    // margin-top: 180px;
+    overflow: hidden;
+
+    &-image {
+      // left: 56px;
+    }
+    &-info {
+      .info-content {
+        h3.heading {
+          font-size: 86px;
+        }
+
+        .info-list {
+          .info-item {
+            label {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: $lg) {
   .question {
+    overflow: visible;
+    margin-top: 160px;
     margin-bottom: 80px;
     &::after {
       left: 100px;

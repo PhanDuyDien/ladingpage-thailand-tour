@@ -87,6 +87,7 @@
 @media (max-width: $xxl) {
   .introduction {
     &-info {
+      padding-top: 0;
       width: 230%;
 
       .info-content {
