@@ -1518,7 +1518,7 @@ a:hover {
   width: 930px;
   height: 930px;
   right: -100px;
-  bottom: -50px;
+  bottom: 90px;
   border-radius: 70% 30% 30% 70% / 36% 37% 63% 64%;
 }
 
@@ -1691,7 +1691,7 @@ a:hover {
     width: 700px;
     height: 700px;
     right: -100px;
-    bottom: -90px;
+    bottom: 45px;
   }
   .service .service-main .service-content .service-detail .slider-toggle {
     left: 482px;
@@ -2577,8 +2577,8 @@ a:hover {
 
 .subscribe .takecare {
   position: fixed;
-  bottom: 50px;
-  left: 50px;
+  bottom: 58px;
+  right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
