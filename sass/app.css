@@ -2900,7 +2900,7 @@ a:hover {
     padding-bottom: 20px;
   }
   .subscribe-container .form-content {
-    margin-top: 35px;
+    margin-top: 45px;
   }
   .subscribe-heading h3 {
     margin: 0;
@@ -2957,7 +2957,7 @@ a:hover {
 
 @media (max-width: 376px) {
   .subscribe-container .form-content {
-    margin-top: unset;
+    margin-top: 10px;
   }
   .subscribe .takecare {
     display: block;
