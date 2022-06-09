@@ -917,13 +917,13 @@ a:hover {
     max-height: 90vh;
   }
   .hero-title-mobile {
-    bottom: 10px;
+    bottom: 30px;
   }
   .hero-title-mobile .hero-text {
-    font-size: 70px;
+    font-size: 73px;
   }
   .hero-title-mobile .hero-des {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -1128,13 +1128,22 @@ a:hover {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .introduction-content .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .introduction-slider {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 120%;
     top: -10px;
-    left: 11px;
+    left: -30px;
+  }
+  .introduction-slider img {
+    width: 100%;
   }
   .introduction-slider .slider-toggle {
     padding: 0;
@@ -1453,7 +1462,8 @@ a:hover {
     font-size: 14px;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
-    font-size: 13px;
+    font-size: 12px;
+    text-align: center;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title img {
     width: 15px;
@@ -1829,25 +1839,30 @@ a:hover {
 
 @media (max-width: 575.98px) {
   .service {
-    padding: 0;
+    padding-bottom: 60px;
   }
   .service::after {
     left: 10px;
   }
   .service-main .service-content {
     width: 85% !important;
+    top: 60px;
+    height: 750px !important;
   }
   .service-main .service-content .service-detail .service-title {
     text-align: center;
   }
   .service-main .service-content .service-detail .service-title .tabs {
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .service-main .service-content .service-detail .service-title h3 {
-    font-size: 26px !important;
+    font-size: 36px !important;
   }
   .service-main .service-content .service-detail .service-title p {
     font-size: 14px !important;
+  }
+  .service-main .service-content .service-detail .service-slider {
+    top: -30px;
   }
   .service-main .service-content .service-detail .service-list {
     height: 360px;
@@ -1861,6 +1876,25 @@ a:hover {
             transform: translateX(-50%);
     padding: 10px 25px;
     right: unset;
+  }
+}
+
+@media (max-width: 376px) {
+  .service {
+    padding-bottom: 60px;
+  }
+  .service-main .service-content {
+    top: 40px;
+    height: 750px;
+  }
+  .service-main .service-content .service-detail .service-title h3 {
+    font-size: 36px !important;
+  }
+  .service-main .service-content .service-detail .service-title .tabs {
+    font-size: 14px !important;
+  }
+  .service-main .service-content .service-detail .service-slider {
+    top: -30px;
   }
 }
 
@@ -2865,6 +2899,9 @@ a:hover {
     overflow: hidden;
     padding-bottom: 20px;
   }
+  .subscribe-container .form-content {
+    margin-top: 35px;
+  }
   .subscribe-heading h3 {
     margin: 0;
     font-size: 28px;
@@ -2883,7 +2920,7 @@ a:hover {
     display: none;
   }
   .subscribe-title h3 {
-    font-size: 26px;
+    font-size: 32px;
   }
   .subscribe-title h2 {
     font-size: 20px;
@@ -2905,7 +2942,9 @@ a:hover {
     font-size: 10px;
   }
   .subscribe .takecare {
-    display: none;
+    display: block;
+    bottom: 110px;
+    left: 350px;
   }
   .subscribe .form-btn .col-3 {
     width: 30%;
@@ -2913,6 +2952,24 @@ a:hover {
   .subscribe .form-btn .btn {
     font-size: 14px;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+  .subscribe-container .form-content {
+    margin-top: unset;
+  }
+  .subscribe .takecare {
+    display: block;
+    bottom: 130px;
+    left: 300px;
+  }
+  .subscribe .takecare .floating-btn .action-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .subscribe .takecare .floating-btn .action-btn img {
+    width: 22px;
   }
 }
 
@@ -3142,13 +3199,13 @@ a:hover {
     font-size: 32px;
   }
   .contact-hotline h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .contact-info {
     width: 100%;
   }
   .contact-info .logo {
-    width: 170px;
+    width: 200px;
     height: 60px;
   }
   .contact-info p {
@@ -3166,7 +3223,7 @@ a:hover {
     margin: 12px 0;
   }
   .contact-address img {
-    width: 20px;
+    width: 17px;
     height: 20px;
   }
   .contact-social {
@@ -3183,7 +3240,7 @@ a:hover {
   }
   .contact-social img {
     width: 20px;
-    height: 20px;
+    height: 18px;
   }
 }
 

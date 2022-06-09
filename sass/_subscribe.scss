@@ -560,6 +560,12 @@
     // min-height: 85vh;
     overflow: hidden;
     padding-bottom: 20px;
+
+    &-container {
+      .form-content {
+        margin-top: 35px;
+      }
+    }
     &-heading {
       h3 {
         margin: 0;
@@ -585,7 +591,7 @@
 
     &-title {
       h3 {
-        font-size: 26px;
+        font-size: 32px;
       }
 
       h2 {
@@ -595,6 +601,7 @@
 
     &-form {
       width: 100%;
+
       .group {
         margin-bottom: 20px;
       }
@@ -613,36 +620,9 @@
     }
 
     .takecare {
-      display: none;
-      // top: 542px;
-
-      // .floating-btn {
-      //   .action-btn {
-      //     width: 40px;
-      //     height: 40px;
-      //   }
-      // }
-
-      // .btn-contact {
-      //   &:hover {
-      //     .btn {
-      //       padding: 5px 15px;
-      //     }
-      //   }
-
-      //   .btn {
-      //     width: 40px;
-      //     height: 40px;
-      //     padding: 11px 11px;
-      //   }
-
-      //   p {
-      //     font-size: 14px;
-      //   }
-      //   span {
-      //     font-size: 12px;
-      //   }
-      // }
+      display: block;
+      bottom: 110px;
+      left: 350px;
     }
 
     .form-btn {
@@ -657,10 +637,28 @@
   }
 }
 
-// @media (max-width: $s) {
-//   .subscribe {
-//     .takecare {
-//       top: 400px;
-//     }
-//   }
-// }
+@media (max-width: $s) {
+  .subscribe {
+    &-container {
+      .form-content {
+        margin-top: unset;
+      }
+    }
+
+    .takecare {
+      display: block;
+      bottom: 130px;
+      left: 300px;
+
+      .floating-btn {
+        .action-btn {
+          width: 35px;
+          height: 35px;
+          img {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+}

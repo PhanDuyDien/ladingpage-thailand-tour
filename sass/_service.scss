@@ -362,7 +362,7 @@
 
 @media (max-width: $xs) {
   .service {
-    padding: 0;
+    padding-bottom: 60px;
 
     &::after {
       left: 10px;
@@ -371,21 +371,26 @@
     &-main {
       .service-content {
         width: 85% !important;
+        top: 60px;
+        height: 750px !important;
 
         .service-detail {
           .service-title {
             text-align: center;
 
             .tabs {
-              font-size: 15px;
+              font-size: 15px !important;
             }
 
             h3 {
-              font-size: 26px !important;
+              font-size: 36px !important;
             }
             p {
               font-size: 14px !important;
             }
+          }
+          .service-slider {
+            top: -30px;
           }
 
           .service-list {
@@ -402,6 +407,32 @@
               padding: 10px 25px;
               right: unset;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $s) {
+  .service {
+    padding-bottom: 60px;
+    &-main {
+      .service-content {
+        top: 40px;
+        height: 750px;
+
+        .service-detail {
+          .service-title {
+            h3 {
+              font-size: 36px !important;
+            }
+            .tabs {
+              font-size: 14px !important;
+            }
+          }
+          .service-slider {
+            top: -30px;
           }
         }
       }
