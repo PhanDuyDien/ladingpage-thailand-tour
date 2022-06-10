@@ -466,14 +466,23 @@
     }
 
     .takecare {
-      // width: 100%;
-      // top: 336px;
+      bottom: 120px;
+      right: 50px;
+      left: unset;
       .btn-contact {
         .btn {
           font-size: 18px;
         }
         p {
           font-size: 18px;
+        }
+      }
+      .floating-menus {
+        li {
+          a {
+            opacity: 1;
+            transform: scale(1);
+          }
         }
       }
     }
@@ -531,8 +540,9 @@
     }
 
     .takecare {
-      bottom: 190px;
-      left: 110px;
+      bottom: 120px;
+      left: unset;
+      right: 30px;
 
       .floating-btn {
         .floating-menus {

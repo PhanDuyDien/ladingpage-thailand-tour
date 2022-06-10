@@ -1427,6 +1427,12 @@ a:hover {
     border-left: none;
     padding: 0;
   }
+  .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-heading .box-title span:first-child {
+    width: 26%;
+  }
+  .tours-detail .tours-timeline .timeline-box:nth-child(3) .box-heading .box-title span:first-child {
+    width: 31%;
+  }
   .tours-detail .tours-timeline .timeline-box .box-detail {
     display: block;
     margin-top: 15px;
@@ -1463,7 +1469,11 @@ a:hover {
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title {
     font-size: 12px;
-    text-align: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
   }
   .tours-detail .tours-timeline .timeline-box .box-heading .box-title img {
     width: 15px;
@@ -1473,6 +1483,25 @@ a:hover {
     width: 25px;
     left: -72px;
     top: 6px;
+  }
+}
+
+@media (max-width: 376px) {
+  .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-heading .box-title {
+    -webkit-column-gap: unset;
+            column-gap: unset;
+  }
+  .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-heading .box-title span:first-child {
+    width: 30%;
+  }
+  .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-heading .box-title span:nth-child(3) {
+    width: 35%;
+  }
+  .tours-detail .tours-timeline .timeline-box:nth-child(2) .box-heading .box-title img {
+    margin-right: 5px;
+  }
+  .tours-detail .tours-timeline .timeline-box:nth-child(3) .box-heading .box-title span:first-child {
+    width: 36%;
   }
 }
 
@@ -2830,11 +2859,21 @@ a:hover {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .subscribe .takecare {
+    bottom: 120px;
+    right: 50px;
+    left: unset;
+  }
   .subscribe .takecare .btn-contact .btn {
     font-size: 18px;
   }
   .subscribe .takecare .btn-contact p {
     font-size: 18px;
+  }
+  .subscribe .takecare .floating-menus li a {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .subscribe .floating-btn .action-btn {
     width: 50px;
@@ -2878,8 +2917,9 @@ a:hover {
     width: 100%;
   }
   .subscribe .takecare {
-    bottom: 190px;
-    left: 110px;
+    bottom: 120px;
+    left: unset;
+    right: 30px;
   }
   .subscribe .takecare .floating-btn .floating-menus li img {
     width: 30px;
@@ -3157,7 +3197,6 @@ a:hover {
   }
   .contact-info .logo {
     width: 170px;
-    height: 60px;
   }
   .contact-info p {
     font-size: 12px;
@@ -3205,8 +3244,7 @@ a:hover {
     width: 100%;
   }
   .contact-info .logo {
-    width: 200px;
-    height: 60px;
+    width: 60%;
   }
   .contact-info p {
     font-size: 12px;
@@ -3223,8 +3261,7 @@ a:hover {
     margin: 12px 0;
   }
   .contact-address img {
-    width: 17px;
-    height: 20px;
+    width: 16px;
   }
   .contact-social {
     row-gap: 12px;
@@ -3239,8 +3276,7 @@ a:hover {
             column-gap: 10px;
   }
   .contact-social img {
-    width: 20px;
-    height: 18px;
+    width: 16px;
   }
 }
 
