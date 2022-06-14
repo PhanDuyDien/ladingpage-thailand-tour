@@ -1501,7 +1501,7 @@ a:hover {
     margin-right: 5px;
   }
   .tours-detail .tours-timeline .timeline-box:nth-child(3) .box-heading .box-title span:first-child {
-    width: 36%;
+    width: 37%;
   }
 }
 
@@ -2753,8 +2753,7 @@ a:hover {
     left: -190px;
   }
   .subscribe .takecare {
-    bottom: 220px;
-    left: 160px;
+    right: 8px;
   }
 }
 
@@ -2775,14 +2774,12 @@ a:hover {
     left: -270px;
   }
   .subscribe .takecare {
-    bottom: 200px;
+    bottom: 135px;
+    right: 40px;
   }
   .subscribe .takecare .floating-btn .action-btn {
     width: 50px;
     height: 50px;
-  }
-  .subscribe .takecare .floating-btn .action-btn img {
-    width: 30px;
   }
 }
 
